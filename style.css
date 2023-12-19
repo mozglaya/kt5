@@ -1,0 +1,88 @@
+.car {
+    width: 200px;
+    height: 100px;
+    animation-duration: 8s;
+    animation-name: car_anim;
+    animation-timing-function: linear;
+    animation-fill-mode:forwards;
+    position: absolute;
+}
+.body{
+    background-color:green;
+    margin-bottom:50px;
+}
+.wheel{
+    background-color:black;
+    width:17px;
+    height:5px;
+    border-radius:20px;
+}
+.body{
+    height:30px;
+    width:90px;
+    border-radius:220px / 80px;
+    margin-top:-43px;
+    z-index:2;
+    position:relative;
+}
+.back-axel{
+    height:38px;
+    background-color:black;
+    width:5px;
+    margin-left:6px;
+}
+.front-axel{
+    height:26px;
+    background-color:black;
+    width:5px;
+    margin-left:6px;
+}
+.front-wheels, .back-wheels{
+    display:inline-block;
+}
+.front-wheels{
+    margin-left: 50px;
+    margin-bottom:6px;
+}
+.seat{
+    background-color:black;
+    height:20px;
+    width:28px;
+    border-radius:130px / 100px;
+    margin-left:20px;
+    position:absolute;
+    margin-top:5px;
+}
+
+@keyframes car_anim {
+    from {
+    left: -200px;
+    }
+    15%{
+    left: 50px;
+        }
+    30%{
+    left: 200px
+        }
+    45%{
+    left: 400px;
+        }
+    60%{
+    left: 600px;
+    }
+    75%{
+    left: 800px
+    }
+    90%{
+    left: 1000px;
+    }
+    95%{
+    right: 500px;
+        }
+    95%{
+    right: 150px;
+        }
+    to {
+    right: 50px;
+    }
+   }
